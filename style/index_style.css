@@ -1,0 +1,174 @@
+/* Variáveis de Cores e Estilo */
+:root {
+    --primary-blue: #2c3e50;
+    --secondary-blue: #34495e;
+    --accent-green: #27ae60;
+    --light-gray: #f4f4f4;
+    --white: #ffffff;
+    --text-color: #333;
+    --shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* Reset Básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--white);
+}
+
+/* Cabeçalho e Navegação */
+header {
+    background-color: var(--primary-blue);
+    color: var(--white);
+    padding: 1rem 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #bdc3c7;
+}
+
+/* Seções Principais */
+main {
+    padding: 2rem 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section {
+    margin-bottom: 3rem;
+}
+
+h2, h3, h4 {
+    margin-bottom: 1rem;
+    color: var(--primary-blue);
+}
+
+/* Banner */
+.banner {
+    background: linear-gradient(rgba(44, 62, 80, 0.8), rgba(44, 62, 80, 0.8)), 
+                url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1350&q=80');
+    background-size: cover;
+    background-position: center;
+    color: var(--white);
+    padding: 4rem 2rem;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.banner h2 { color: var(--white); font-size: 2.5rem; }
+
+/* Tabela de Preços */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    box-shadow: var(--shadow);
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: var(--secondary-blue);
+    color: var(--white);
+}
+
+tr:nth-child(even) { background-color: var(--light-gray); }
+
+/* Vídeo Responsivo */
+.video iframe {
+    width: 100%;
+    max-width: 800px;
+    height: 450px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+/* Cards de Destinos (destinos.html) */
+.galeria {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card {
+    background: var(--white);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    width: 300px;
+    box-shadow: var(--shadow);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+/* Listas de Definição nos Cards */
+dl dt {
+    font-weight: bold;
+    color: #e67e22; /* Cor de destaque para Clima/Moeda */
+    margin-top: 10px;
+}
+
+dl dd {
+    margin-left: 0;
+    margin-bottom: 5px;
+    border-bottom: 1px solid #eee;
+}
+
+/* Formulário */
+form {
+    background: var(--light-gray);
+    padding: 2rem;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form div { margin-bottom: 15px; }
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"], input[type="email"], input[type="date"], textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border

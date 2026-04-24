@@ -1,0 +1,19 @@
+body{
+    font-family: Arial;
+    background-color: #f0f2f5;
+    padding: 20 px;
+}
+
+
+.form-cadastro{
+    max-width: 600px;
+    margin: 0 auto;
+    background:white;
+    padding: 30px;
+    border-radius: 5px;
+}
+
+h2 {
+    color: #0077cc;
+   
+}

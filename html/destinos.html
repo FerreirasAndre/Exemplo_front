@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horizonte Blue | Destinos</title>
+    <link rel="stylesheet" href="../style/index_style.css">
+</head>
+<body>
+    <header>
+        <h1>Horizonte Blue</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="destinos.html">Destinos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="filtros">
+            <h4>O que você procura?</h4>
+            <label><input type="checkbox" name="tipo"> Praia</label>
+            <label><input type="checkbox" name="tipo"> Montanha</label>
+            <label><input type="checkbox" name="tipo"> Neve</label>
+        </section>
+
+        <section class="galeria">
+            <article class="card">
+                <img src="https://www.pocketwanderings.com/wp-content/uploads/2021/12/Arc-de-Triomphe.jpg" alt="Paris, França">
+                <h3>Paris, França</h3>
+                <dl>
+                    <dt>Clima</dt>
+                    <dd>Temperado (4 Estações)</dd>
+                    <dt>Moeda</dt>
+                    <dd>Euro (EUR)</dd>
+                    <dt>Idioma local</dt>
+                    <dd>Francês</dd>
+                </dl>
+            </article>
+
+            <article class="card">
+                <img src="https://i0.wp.com/turismo.eurodicas.com.br/wp-content/uploads/2019/01/zermat-alpes-suicos.jpg?resize=750%2C450&ssl=1" alt="Alpes Suíços">
+                <h3>Alpes Suíços</h3>
+                <dl>
+                    <dt>Clima</dt>
+                    <dd>Frio Alpino / Neve</dd>
+                    <dt>Moeda</dt>
+                    <dd>Franco Suíço (CHF)</dd>
+                    <dt>Idioma local</dt>
+                    <dd>Alemão, Francês e Italiano</dd>
+                </dl>
+            </article>
+        </section>
+
+        <section class="contato">
+            <h3>Solicite seu Orçamento</h3>
+            <form action="#" method="post">
+                <div>
+                    <label for="nome">Nome Completo:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Ex: João Silva" required>
+                </div>
+
+                <div>
+                    <label for="email">E-mail de Contato:</label>
+                    <input type="email" id="email" name="email" placeholder="exemplo@email.com" required>
+                </div>
+
+                <div>
+                    <label for="data">Data Desejada:</label>
+                    <input type="date" id="data" name="data">
+                </div>
+
+                <div>
+                    <label for="mensagem">Detalhes da Viagem:</label>
+                    <textarea id="mensagem" name="mensagem" rows="5" placeholder="Conte-nos sobre seus planos..."></textarea>
+                </div>
+
+                <button type="submit">Enviar Solicitação</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Horizonte Blue - Viagens & Turismo</p>
+        <p>Contato: (11) 9999-9999 | contato@horizonteblue.com.br</p>
+    </footer>
+</body>
+</html>
