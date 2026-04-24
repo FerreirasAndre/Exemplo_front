@@ -9,11 +9,14 @@ body{
 
 .login-containter{
     background: white;
-    padding: 20px;
+    padding: auto 20px;
     border-radius: 10px;
     width: 300px;
     border: solid black 1px;
     align-items: center;
-    text-align: center;   
+    text-align: center;  
+    margin: 20px auto; 
 
 }
+
+

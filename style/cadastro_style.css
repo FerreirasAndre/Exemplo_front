@@ -6,6 +6,7 @@ body{
 
 
 .form-cadastro{
+    align-items: center;
     max-width: 600px;
     margin: 0 auto;
     background:white;
@@ -15,5 +16,31 @@ body{
 
 h2 {
     color: #0077cc;
-   
+    border-bottom: 2px solid #0077cc;
+    padding-bottom: 10px;
+}
+
+.row{
+    display:grid;
+    grid-template-columns: 1ftr;
+    gap: 15px;
+}
+.full-whidt{
+    grid-column: span 2;
+}
+
+input{
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.btn-sub{
+    background: #27ae60;
+    color: white;
+    padding: 15 px;
+    width: 50%;
+    font-size: 16px;
 }
